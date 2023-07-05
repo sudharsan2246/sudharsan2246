@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="javascript.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+ 
+        <div class="a">
+            <h1>Registration form</h1>
+<div class="margin">
+            <label for="name">UserName :</label>
+            <input type="text" id="name" class="border"  placeholder="Enter Your UserName">
+            <p id="error1" style="color: red;"></p></div>
+<div class="margin">
+            <label for="date">Date Of Birth :</label>
+            <input type="date" id="date" class="border" min="01-01-1940" max="04-04-2023" value="04-04-2023"  >
+            <p id="error8" style="color: red;"></p></div>
+<div class="margin">
+            <label for="mobile number">Mobile Number :</label>
+            <input type="number"class="border" id="mobilenumber" placeholder="Enter Your Mobile Number">
+            <p id="error2" style="color: red;"></p></div>
+ <div class="margin">
+            <label for="Email">Email :</label>
+            <input type="text"class="border" id="email"  placeholder="Enter Your Email">
+            <p id="error3" style="color: red;"></p></div>
+<div class="margin">
+            <label for="Password">Password :</label>
+            <input type="text" class="border"id="password" placeholder="Enter Your Password">
+            <p id="error4" style="color: red;"></p></div>
+<div class="margin">
+            <label for="confirm password">Confirm Password :</label>
+            <input type="text" class="border" id="cpassword" placeholder="Enter Your Confirm Password">
+            <p id="error5" style="color: red;"></p>
+            <p id="error51" style="color: green;"></p></div>
+<div class="margin">
+            <label for="radio">Location :</label><br>
+            <input type="radio" name="radio" id="Location1" > TAMILNADU <br>
+            <input type="radio" name="radio" id="Location2" > KERALA <br>
+            <input type="radio" name="radio" id="Location3" > GOA <br>
+            <input type="radio" name="radio" id="Location4" > PUNE <br>
+            <p id="error6" style="color: red; "></p>
+</div>
+<div class="margin">
+            <label for="Terms And Condition">Terms And Condition</label>
+            <input type="checkbox" name="checkbox" id="box1">  Accepted
+            <input type="checkbox" name="checkbox" id="box2">  Declined
+            <p id="error7" style="color: red;"></p>
+           
+</div><br>
+        
+        <button id="submit" onclick="validate()">SUBMIT</button>
+        
+        
+    </div>
+    
+</body>
+</html>
